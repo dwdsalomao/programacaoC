@@ -47,7 +47,7 @@ void listProducts(Product products[MAX_PRODUCTS], int productCount){
     } else {
         for(int i = 0; i < productCount; i++){
             printf("\nCode: %d\n", products[i].code);
-            printf("Name: %s\n", products[i].name);
+            printf("Product: %s\n", products[i].name);
             printf("Price: $%.2f\n", products[i].price);
             printf("Stock: %d\n", products[i].stock);
         }
@@ -65,7 +65,7 @@ void searchProducts(Product products[MAX_PRODUCTS], int productCount){
             found = 1;
             printf("\nProduct Found\n");
             printf("\nCode: %d\n", products[i].code);
-            printf("Name: %s\n", products[i].name);
+            printf("Product: %s\n", products[i].name);
             printf("Price: $%.2f\n", products[i].price);
             printf("Stock: %d\n", products[i].stock);
         } 
